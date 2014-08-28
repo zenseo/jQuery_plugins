@@ -8,9 +8,9 @@
 		var $ele = $(this);
 		$(window).scroll(function(){
 			if ($(window).scrollTop() >= options.minHeight) {
-				$ele.show('slow');
+				$ele.fadeIn('slow');
 			} else {
-				$ele.hide('slow');
+				$ele.fadeOut('slow');
 			}
 		});
 		$ele.click(function(){
